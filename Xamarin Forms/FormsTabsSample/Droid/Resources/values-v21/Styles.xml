@@ -1,0 +1,32 @@
+﻿<resources>
+  <!--
+        Base application theme for API 21+. This theme replaces
+        MyTheme from resources/values/styles.xml on API 21+ devices.
+    -->
+  <style name="SampleTheme" parent="MyTheme.Base">
+    <item name="android:windowContentTransitions">true</item>
+    <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+    <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+  	<item name="android:editTextStyle">@style/EditTextMyTheme</item>
+	<item name="android:spinnerItemStyle">@style/SpinnerItemMyTheme</item>
+  </style>
+     <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+	    <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+	  </style>
+
+	  <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+	    <item name="android:textColor">@android:color/black</item>
+	  </style>
+
+	  <style name="EditTextMyTheme" parent="android:Widget.EditText">
+		  <item name="android:background">#ffffff</item>
+	  </style>
+
+	   <style name="SpinnerItemMyTheme" parent="@android:style/Widget.TextView.SpinnerItem">
+		  <item name="android:textColor">#000000</item>
+	  </style>
+</resources>
+
+
