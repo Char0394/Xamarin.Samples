@@ -32,13 +32,13 @@
   <ItemGroup>
     <Compile Include="FormsTabsSample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MyTabbedPage.cs" />
     <Compile Include="TabPage.cs" />
     <Compile Include="Pages\TabOnePage.cs" />
     <Compile Include="Pages\TabTwoPage.cs" />
     <Compile Include="Pages\TabThreePage.cs" />
     <Compile Include="Pages\TabFourPage.cs" />
     <Compile Include="Pages\TabFivePage.cs" />
+    <Compile Include="PrettyTabbedPage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="packages\Xamarin.Forms.1.5.1.6471\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('packages\Xamarin.Forms.1.5.1.6471\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

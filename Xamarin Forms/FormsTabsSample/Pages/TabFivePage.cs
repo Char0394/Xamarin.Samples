@@ -7,14 +7,9 @@ namespace FormsTabsSample
 {
 	public class TabFivePage : TabPage
 	{
-		public TabFivePage ()
+		public TabFivePage () : base("Five")
 		{
-			Content = new StackLayout { 
-				
-				Children = {
-					new Label { Text = "Five" },
-				}
-			};
+
 		}
 	}
 }

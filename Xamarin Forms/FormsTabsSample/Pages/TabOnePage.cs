@@ -7,20 +7,11 @@ namespace FormsTabsSample
 {
 	public class TabOnePage : TabPage
 	{
-		public TabOnePage ()
+		public TabOnePage () : base("One")
 		{
-			Content = new StackLayout { 
-				Children = {
-					new Label { Text = "One" }
-				}
-			};
+
 		}
 
-		protected override void OnAppearing ()
-		{
-			base.OnAppearing ();
-			Debug.WriteLine ("1");
-		}
 	}
 }
 

@@ -11,29 +11,27 @@ using Android.App;
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
 
-[assembly: ExportRenderer(typeof(MyTabbedPage), typeof(FormsTabsSample.Droid.CustomTabbedPageRenderer))]
+[assembly: ExportRenderer(typeof(PrettyTabbedPage), typeof(FormsTabsSample.Droid.CustomTabbedPageRenderer))]
 namespace FormsTabsSample.Droid
 {
 	public class CustomTabbedPageRenderer : TabbedPageRenderer
 	{
 		ViewPager viewPager;
 		TabLayout tabs;
-		MyTabbedPage tabbedPage;
+		PrettyTabbedPage tabbedPage;
 		bool firstTime = true;
 		protected override void OnElementChanged (ElementChangedEventArgs<TabbedPage> e)
 		{
 			base.OnElementChanged (e);
 
 
-			 tabbedPage = e.NewElement as MyTabbedPage;
+			 tabbedPage = e.NewElement as PrettyTabbedPage;
 
 			 viewPager = (ViewPager)GetChildAt (0);
 		
 			tabs = this.FindViewById<TabLayout> (Resource.Id.sliding_tabs);
 
 			tabs.TabSelected+=(s,a)=>{
-
-
 
 				var page=tabbedPage.Children [a.Tab.Position];
 

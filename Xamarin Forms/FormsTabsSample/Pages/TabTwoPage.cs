@@ -7,19 +7,11 @@ namespace FormsTabsSample
 {
 	public class TabTwoPage : TabPage
 	{
-		public TabTwoPage ()
+		public TabTwoPage () : base("Two")
 		{
-			Content = new StackLayout { 
-				Children = {
-					new Label { Text = "Two" }
-				}
-			};
+
 		}
-		protected override void OnAppearing ()
-		{
-			base.OnAppearing ();
-			Debug.WriteLine ("2");
-		}
+
 	}
 }
 

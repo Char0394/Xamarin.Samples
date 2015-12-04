@@ -10,7 +10,7 @@ namespace FormsTabsSample
 		{
 			// The root page of your application
 
-			MainPage = new MyTabbedPage{
+			MainPage = new PrettyTabbedPage{
 				ShowTitles=false,
 				Children = {  
 					new TabOnePage(){ Title="1", Icon="homedisabled", SelectedIcon="homeenabled" },
@@ -20,7 +20,10 @@ namespace FormsTabsSample
 									new TabFivePage(){ Title="5", Icon="messagedisabled", SelectedIcon="messageenabled"  }
 				}
 			};
+			((PrettyTabbedPage)MainPage).CurrentPageChanged+=(s,a) =>{
 
+				System.Diagnostics.Debug.WriteLine("SDSDASD");
+			};
 		}
 
 		protected override void OnStart ()

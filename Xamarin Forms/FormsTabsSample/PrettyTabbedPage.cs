@@ -3,11 +3,11 @@ using Xamarin.Forms;
 
 namespace FormsTabsSample
 {
-	public class MyTabbedPage : TabbedPage
+	public class PrettyTabbedPage : TabbedPage
 	{
 
 		public static readonly BindableProperty ShowTitlesProperty =
-			BindableProperty.Create ("ShowTitles", typeof(bool), typeof(MyTabbedPage), true);
+			BindableProperty.Create ("ShowTitles", typeof(bool), typeof(PrettyTabbedPage), true);
 
 		public bool ShowTitles
 		{

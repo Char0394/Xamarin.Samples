@@ -7,18 +7,9 @@ namespace FormsTabsSample
 {
 	public class TabFourPage : TabPage
 	{
-		public TabFourPage ()
+		public TabFourPage () : base("Four")
 		{
-			Content = new StackLayout { 
-				Children = {
-					new Label { Text = "Four" }
-				}
-			};
-		}
-		protected override void OnAppearing ()
-		{
-			base.OnAppearing ();
-			Debug.WriteLine ("4");
+
 		}
 	}
 }
