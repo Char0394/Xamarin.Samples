@@ -10,20 +10,20 @@ namespace FormsTabsSample
 		{
 			// The root page of your application
 
-			MainPage = new PrettyTabbedPage{
+			MainPage = new PrettyTabbedPage
+			{
 				ShowTitles=false,
-				Children = {  
+				Children = 
+				{  
 					new TabOnePage(){ Title="1", Icon="homedisabled", SelectedIcon="homeenabled" },
-					    new TabTwoPage(){ Title="2", Icon="notificationenable", SelectedIcon="notificationdisabled" },
-							new TabThreePage(){ Title="3", Icon="settingdisabled", SelectedIcon="settingenabled" },
-								new TabFourPage(){ Title="4", Icon="flagdisabled", SelectedIcon="flagenabled" },
-									new TabFivePage(){ Title="5", Icon="messagedisabled", SelectedIcon="messageenabled"  }
+					new TabTwoPage(){ Title="2", Icon="notificationenable", SelectedIcon="notificationdisabled" },
+					new TabThreePage(){ Title="3", Icon="settingdisabled", SelectedIcon="settingenabled" },
+					new TabFourPage(){ Title="4", Icon="flagdisabled", SelectedIcon="flagenabled" },
+					new TabFivePage(){ Title="5", Icon="messagedisabled", SelectedIcon="messageenabled"  }
+
 				}
 			};
-			((PrettyTabbedPage)MainPage).CurrentPageChanged+=(s,a) =>{
 
-				System.Diagnostics.Debug.WriteLine("SDSDASD");
-			};
 		}
 
 		protected override void OnStart ()

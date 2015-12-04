@@ -7,9 +7,10 @@ namespace FormsTabsSample
 	{
 		public TabPage(string name)
 		{
-			Content = new StackLayout { 
-
-				Children = {
+			Content = new StackLayout 
+			{ 
+				Children = 
+				{
 					new Label { Text = name,  FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)), FontAttributes = FontAttributes.Bold, VerticalOptions=LayoutOptions.CenterAndExpand , HorizontalOptions = LayoutOptions.CenterAndExpand},
 				}
 			};
