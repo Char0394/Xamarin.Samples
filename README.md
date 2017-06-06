@@ -16,5 +16,5 @@ In this sample app we show how to make a Swiped Tabbed Page with icons in Androi
 ### Introduction Page 
 In this sample app we show how to create a simple and beautiful introduction Page 
 
-<a href="https://imgflip.com/gif/1qdf3j"><img src="https://i.imgflip.com/1qdf3j.gif" title="made at imgflip.com"/></a>
+<img src="https://github.com/CrossGeeks/Xamarin.Samples/blob/master/Xamarin%20Forms/ScreenShots/IntroductionUISample/introPage.gif" title="IntroductionPage"/>
 
