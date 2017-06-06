@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="IntroductionUISample.IntroPage"
+	         xmlns:control="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+	         xmlns:local="clr-namespace:IntroductionUISample" BackgroundColor="Black">
+	<ContentPage.Content>
+      <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+		 <local:VideoPlayerView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+			    AbsoluteLayout.LayoutBounds="0, 0, 1, 0.9"  x:Name="videoPlayer"
+                AbsoluteLayout.LayoutFlags="All"  />
+			
+        <StackLayout HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand"
+               AbsoluteLayout.LayoutBounds="0, 0, 1, 0.9"
+               AbsoluteLayout.LayoutFlags="All"
+               x:Name="logoLayout">
+          <StackLayout Padding="30">
+			<Image Source="logo" />
+          </StackLayout>
+        </StackLayout>
+
+      <control:CarouselView ItemsSource="{Binding MyDataSource}" AbsoluteLayout.LayoutBounds="0, 0.7, 1, 0.1" 
+                AbsoluteLayout.LayoutFlags="All" Position="{Binding Position, Mode=TwoWay}">
+        <control:CarouselView.ItemTemplate>
+          <DataTemplate>
+				<StackLayout  HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+           			 <Label Text="{Binding Title}" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="White"  HorizontalOptions="CenterAndExpand"/>
+					 <Label Text="{Binding Detail}" HorizontalTextAlignment="Center" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+				</StackLayout>
+          </DataTemplate>
+        </control:CarouselView.ItemTemplate>
+      </control:CarouselView>
+			
+	   <local:CarouselIndicators IndicatorHeight="12" IndicatorWidth="12" UnselectedIndicator="unselected_circle.png" SelectedIndicator="selected_circle.png" Position="{Binding Position}" ItemsSource="{Binding MyDataSource}"
+			AbsoluteLayout.LayoutBounds="0, 0.9, 1, 0.1" 
+            AbsoluteLayout.LayoutFlags="All"/>
+    
+
+		<Button BackgroundColor="Blue" TextColor="White" BorderRadius="0" Text="Login"  
+				AbsoluteLayout.LayoutBounds="0, 1, 0.5, 0.1" 
+                AbsoluteLayout.LayoutFlags="All"  />
+			
+		<Button BackgroundColor="Black" TextColor="White" BorderRadius="0" Text="Sign Up"
+			    AbsoluteLayout.LayoutBounds="1, 1, 0.5, 0.1" 
+                AbsoluteLayout.LayoutFlags="All" />
+      </AbsoluteLayout>
+  </ContentPage.Content>
+</ContentPage>
